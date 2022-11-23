@@ -1,87 +1,115 @@
 body {
     background-image: linear-gradient(white, #d5d5d5);
-    font-family:'Abel';
+    font-family: 'Abel';
     border-style: double;
-    font-size: 18px;
-    padding: 25px;
+    font-size: 16px;
     text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*Top Navigation/Timetable*/
+.topGrad {
+    padding-left: 10px;
+}
+
+.rightSide {
+    display: inline-block;
+    right: 0px;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.direct {
+    font-size: 1em;
+}
+
+
+/*Headers*/
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
-time{
+
+
+caption {
+    color: black;
+    margin-bottom: 5px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-h1{
-    text-align: center;
-    text-decoration: underline;
+small {
+    font-size: 14px;
+    line-height: 15px;
 }
 
-table {
-    border: 1px solid black;
-}
-
-caption	{
-	color: black;
-	margin-bottom: 5px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-table  {
-	border-collapse:collapse;
-	border: 1px solid #666;
-}
-th	{
-	background-color: #666;
-	padding: 8px 2px 2px 2px;
-	border: 1px solid #FFF;
-	color: #FFF;
-}
-td	{
-	border: 1px solid #666;
-	padding: 2px;
-}
-td:empty {
-	background-color: #ccc;
-}
-small	{
-	font-size: 14px;
-	line-height: 15px;
-}
-
-.weekly {
-    border-style:outset;
-    box-shadow: 3px 3px 3px grey, -3px -3px 3px grey;
-
-}
-
-.direct {
-    font-size: 23px;
-}
-
-.axol{
-    text-align: center;
-}
-
-.anchor{
+.anchor {
     text-align: right;
 }
 
-.weekly{
-    font-size: 17px;
-    padding-right: 10px;
-    padding-left: 10px;
+/*Img and images*/
+.axol {
+    text-align: center;
 }
 
-.text{
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 18px;
-}
-
-img{
+img {
     max-width: 100%;
+}
+
+
+/*Weekly Posts*/
+.weekly {
+    font-size: 1em;
+    padding-right: 15px;
+    padding-left: 10px;
+    border-style: outset;
+    box-shadow: 3px 3px 3px grey, -3px -3px 3px grey;
+}
+time {
+    font-weight: bold;
+}
+
+/*TimeTable Specific*/
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    padding-left: 5%;
+    display: none;
+    
+}
+
+th {
+    background-color: #666;
+    padding: .8em .2em .2em .2em;
+    border: .1em solid #FFF;
+    color: #FFF;
+}
+
+td {
+    border: .1em solid #666;
+    padding: .2em;
+
+}
+
+td:empty {
+    background-color: #ccc;
+}
+
+@media (min-width: 1170px) {
+    table {
+        display: contents;
+    }
+
+    .leftSide {
+        width: 50%;
+        display: inline-block;
+    }
 }

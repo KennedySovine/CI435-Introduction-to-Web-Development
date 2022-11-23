@@ -5,18 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome (locally)",
-            "request": "launch",
             "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome",
-            "url": "http://kis16.brighton.domains/ci435/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
