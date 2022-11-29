@@ -6,6 +6,7 @@ body {
     text-align: justify;
     padding-left: 1%;
     padding-right: 1%;
+
 }
 
 /*Top Navigation/Timetable*/
@@ -20,7 +21,7 @@ body {
     height: auto;
     float: right;
     vertical-align: top;
-    overflow:auto;
+    overflow: auto;
 }
 
 .direct {
@@ -73,27 +74,27 @@ small {
     padding-right: 15px;
     border-style: outset;
     box-shadow: 3px 3px 3px grey, -3px -3px 3px grey;
-
-    display: grid;
-
+    overflow: hidden;
 }
 
-
-
 .weekly > img {
+    object-fit: contain;
     max-width: 100%;
-    min-width: 100px;
+    min-width: 150px;
     height: auto;
+    display: hidden;
     float: left;
     margin : 5px;
 }
 
 .weekly > iframe {
-    display: inline;
+    object-fit: contain;
+    display: block;
     float: left;
     max-width: 100%;
     height: auto;
     border: none;
+    margin : 5px;
 }
 
 
@@ -137,21 +138,16 @@ td:empty {
         right: 0px;
         vertical-align: top;
     }
-
     table{
         font-size: 100%;
     }
-
-    .weekly > iframe {
-        display: inline;
-        margin: 2px 10px 5px 2px ;
-    }
     .weekly > img {
         max-width: 300px;
-        min-width: 100px;
-        height: auto;
-        display: inline;
-        float: left;
-        margin : 5px;
+    }
+}
+
+@media (min-width: 1000px){
+    body{
+        font-size: 1.5em;
     }
 }
