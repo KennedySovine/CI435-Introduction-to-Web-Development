@@ -9,19 +9,22 @@ body {
 }
 
 /*Top Navigation/Timetable*/
-.topGrad {
-    padding-left: 10px;
+.leftSide{
+    width: fit-content;
+    display: inline-block;
 }
 
 .rightSide {
-    display: inline-block;
-    right: 0px;
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    size-adjust: 1vw;
+    width: 100%;
+    height: auto;
+    float: right;
+    vertical-align: top;
+    overflow:auto;
 }
+
 .direct {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 
@@ -59,31 +62,49 @@ small {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
+/*Weekly Posts*/
+.main{
+    display: inline-block;
 }
 
-
-/*Weekly Posts*/
 .weekly {
-    font-size: 1em;
-    padding-right: 15px;
     padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 15px;
     border-style: outset;
     box-shadow: 3px 3px 3px grey, -3px -3px 3px grey;
+
+    display: grid;
+
 }
-time {
-    font-weight: bold;
+
+
+
+.weekly > img {
+    max-width: 100%;
+    min-width: 100px;
+    height: auto;
+    float: left;
+    margin : 5px;
 }
+
+.weekly > iframe {
+    display: inline;
+    float: left;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+
+
+time { font-weight: bold; }
 
 /*TimeTable Specific*/
 table {
+    font-size: .75em;
     border: 1px solid black;
     border-collapse: collapse;
-
-    padding-left: 5%;
-    display: none;
-    
 }
 
 th {
@@ -103,13 +124,34 @@ td:empty {
     background-color: #ccc;
 }
 
-@media (min-width: 1170px) {
-    table {
-        display: contents;
+@media only screen and (min-width: 500px) {
+    .leftSide{
+        width: fit-content;
+        display: inline-block;
+    }
+    
+    .rightSide {
+        width: 65%;
+        height: auto;
+        float: right;
+        right: 0px;
+        vertical-align: top;
     }
 
-    .leftSide {
-        width: 50%;
-        display: inline-block;
+    table{
+        font-size: 100%;
+    }
+
+    .weekly > iframe {
+        display: inline;
+        margin: 2px 10px 5px 2px ;
+    }
+    .weekly > img {
+        max-width: 300px;
+        min-width: 100px;
+        height: auto;
+        display: inline;
+        float: left;
+        margin : 5px;
     }
 }
