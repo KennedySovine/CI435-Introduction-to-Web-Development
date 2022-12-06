@@ -19,11 +19,8 @@
 </head>
 
 <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="10.1.0">
-	<!--Markup all web page content inside the 'body' tags -->
 	<div id="wrapper">
-		<!--The 'wrapper' contains all the page content-->
 		<header>
-			<!--The main heading for the page -->
 			<h1>Contact Me</h1>
 		</header>
 
@@ -42,25 +39,31 @@
 		</div>
 
 		<main>
-			<!--The main page content -->
-
-			<article>
-			</article>
+			<h3>Contact Kennedy Sovine</h3>
+			<form id="contact">
+				<div class="leftSide">
+					<fieldset id="info">
+						<legend>Your Contact Details</legend>
+						<label for="name">Name <em>(required)</em></label>
+						<input type="text" id="name" required>
+						<label for="email">Email <em>(required)</em></label>
+						<input type="text" id="email" required>
+					</fieldset>
+				</div>
+				<div class="conRight">
+					<fieldset id="mess">
+						<legend>Message</legend>
+						<textarea id="message" required></textarea>
+					</fieldset>
+				</div>
+				<input type="submit" value = "Click to Send">
+			</form>
 		</main>
-		<!--Close main page content -->
-
-		<aside>
-			<h2>References</h2>
-
-			<ol>
-				<li>...</li>
-				<li>...</li>
-			</ol>
-		</aside>
-
-		<footer>
-			<!--Footer content --><small>&copy; 2022, Kennedy Sovine.</small>
-			<a href="mailto:kennedy.sovine1@uni.brighton.ac.uk">Email Kennedy Sovine</a></footer>
+		<div>
+			<footer>
+				<!--Footer content --><small>&copy; 2022, Kennedy Sovine.</small>
+				<a href="mailto:kennedy.sovine1@uni.brighton.ac.uk">Email Kennedy Sovine</a></footer>
+		</div>
 	</div>
 	<!--Close 'wrapper' div -->
 </body>

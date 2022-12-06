@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 
@@ -82,22 +82,20 @@ small {
     max-width: 100%;
     min-width: 150px;
     height: auto;
-    display: hidden;
     float: left;
     margin : 5px;
 }
 
 .weekly > iframe {
     object-fit: contain;
-    display: block;
+    display: inline;
     float: left;
-    max-width: 100%;
+    width: 400px;
     height: auto;
+    aspect-ratio: 2/1;
     border: none;
-    margin : 5px;
+    margin : 5px 5px 5px 0;
 }
-
-
 
 time { font-weight: bold; }
 
@@ -125,6 +123,41 @@ td:empty {
     background-color: #ccc;
 }
 
+/*contact form*/
+
+#info{
+    max-width: 100%;
+    width: 200px;
+}
+
+fieldset > legend {
+    text-align: center;
+}
+
+fieldset > label {
+    display: block;
+}
+
+fieldset > input {
+    height: 20px;
+    aspect-ratio: 10;
+    display: block;
+}
+
+
+#mess{
+    width: fit-content;
+    padding: 5px;
+    display: block;
+}
+
+fieldset> textarea{
+    resize:none;
+    width: 250px;
+    height: 100px;
+}
+
+/* Media Queries*/
 @media only screen and (min-width: 500px) {
     .leftSide{
         width: fit-content;
@@ -144,10 +177,37 @@ td:empty {
     .weekly > img {
         max-width: 300px;
     }
+
+    .weekly > iframe {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 900px){
+    .weekly > iframe {
+        display: contents;
+
+    }
+    .weekly > img{
+        display: contents;
+    }
 }
 
 @media (min-width: 1000px){
     body{
-        font-size: 1.5em;
+        font-size: 1.1em;
+    }
+    .weekly > iframe {
+        max-width: 400px;
+    }
+    .conRight{
+        size-adjust: 1vw;
+        float: right;
+        margin: 9px;
+        vertical-align: top;
+        overflow: auto;
+    }
+    fieldset> textarea{
+        width: 50vw;
     }
 }
