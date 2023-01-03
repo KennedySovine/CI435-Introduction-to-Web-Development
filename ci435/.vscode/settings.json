@@ -1,6 +1,0 @@
-{
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "monospace",
-    "livePreview.defaultPreviewPath": "/Users/keennedy/Documents/GitHub/CI435-Introduction-to-Web-Development/ci435/index.html",
-}
