@@ -1,33 +1,22 @@
 body {
-    background-image: linear-gradient(white, #d5d5d5);
     font-family: 'Abel';
-    border-style: double;
-    font-size: 16px;
-    text-align: justify;
-    padding-left: 1%;
-    padding-right: 1%;
-
+    font-size: 12px;
 }
 
 /*Top Navigation/Timetable*/
 .leftSide{
     width: fit-content;
-    display: inline-block;
 }
 
 .rightSide {
-    size-adjust: 1vw;
     width: 100%;
     height: auto;
-    float: right;
-    vertical-align: top;
     overflow: auto;
 }
 
 .direct {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
-
 
 /*Headers*/
 h1 {
@@ -40,6 +29,10 @@ h2 {
     font-size: 1.3em;
 }
 
+.main h2{
+    text-align: center;
+}
+
 
 /*Funky text stuff*/
 caption {
@@ -47,6 +40,7 @@ caption {
     margin-bottom: 5px;
     font-weight: bold;
     text-transform: uppercase;
+    font-style: italic;
 }
 
 small {
@@ -65,10 +59,12 @@ small {
 
 /*Weekly Posts*/
 .main{
+    object-fit: contain;
     display: inline-block;
 }
 
 .weekly {
+    object-fit: contain;
     padding-left: 10px;
     padding-bottom: 5px;
     padding-right: 15px;
@@ -79,22 +75,28 @@ small {
 
 .weekly > img {
     object-fit: contain;
-    max-width: 100%;
-    min-width: 150px;
+    width:50%;
+    min-width: 50px;
     height: auto;
     float: left;
     margin : 5px;
+    overflow: hidden;
 }
 
 .weekly > iframe {
     object-fit: contain;
-    display: inline;
     float: left;
     width: 400px;
     height: auto;
     aspect-ratio: 2/1;
     border: none;
     margin : 5px 5px 5px 0;
+
+}
+
+code{
+    font-size: 1em;
+    background-color: lightgray;
 }
 
 time { font-weight: bold; }
@@ -140,10 +142,9 @@ fieldset > label {
 
 fieldset > input {
     height: 20px;
-    aspect-ratio: 10;
+    aspect-ratio: 10/1;
     display: block;
 }
-
 
 #mess{
     width: fit-content;
@@ -158,7 +159,15 @@ fieldset> textarea{
 }
 
 /* Media Queries*/
+@media only screen and (max-width: 500px) {
+    .weekly > iframe{
+        display: none;
+    }
+}
 @media only screen and (min-width: 500px) {
+    body{
+        font-size: 2vw;
+    }
     .leftSide{
         width: fit-content;
         display: inline-block;
@@ -174,34 +183,24 @@ fieldset> textarea{
     table{
         font-size: 100%;
     }
-    .weekly > img {
-        max-width: 300px;
-    }
 
     .weekly > iframe {
         max-width: 60%;
     }
-}
-
-@media (max-width: 900px){
-    .weekly > iframe {
-        display: contents;
-
-    }
-    .weekly > img{
-        display: contents;
+    .weekly > img {
+        width: 20%;
     }
 }
 
 @media (min-width: 1000px){
     body{
-        font-size: 1.1em;
+        font-size: 1.2vw;
     }
     .weekly > iframe {
         max-width: 400px;
+        display: inline;
     }
     .conRight{
-        size-adjust: 1vw;
         float: right;
         margin: 9px;
         vertical-align: top;

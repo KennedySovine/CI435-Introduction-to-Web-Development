@@ -1,0 +1,100 @@
+@import "style.css";
+
+body {
+    font-size: 15px;
+    background-color: whitesmoke;
+    padding-left: 2em;
+    padding-right: 1em;
+    border-style: dashed;
+    right: 0px;
+  }
+
+  .leftSide {
+    max-width: 49%;
+    display: inline-block;
+  }
+
+  .nav{
+    font-size: .9em;
+  }
+
+  .rightSide {
+    width: 49%;
+    height: fit-content;
+    padding-left: 5px;
+    overflow: hidden;
+  }
+
+  figure {
+    text-align: right;
+    overflow: hidden;
+  }
+
+  figcaption {
+    font-style: italic;
+    text-align: center;
+  }
+
+  main{
+    display: inline-block;
+  }
+  article{
+    overflow: hidden;
+  }
+
+  figure img{
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 200px;
+    overflow: hidden;
+    height: auto;
+  }
+
+  article h2{
+    padding-left: 10px;
+    padding-right: 30px;
+    background-color: rgb(208, 208, 208);
+    line-height: 50px;
+    font-weight: bold; 
+    font-size: 1.2em; 
+    text-align: left;
+    max-width: fit-content;
+  }
+
+  .def{
+    width: 70%;
+    max-width: 50%;
+    height: auto;
+    float: right;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 0px 0px 5px rgba(5, 27, 98, 0.3);  
+  }
+
+  #smallScreen{
+    display: none;
+}
+
+
+  @media only screen and (min-width: 1000px) {
+    body {
+        font-size: 1.26vw;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    figure {
+        display: none;
+    }
+    .leftSide{
+        max-width: 100%;
+    }
+
+    .rightSide{
+        display: none;
+    }
+
+    #smallScreen{
+        display: contents;
+    }
+}
