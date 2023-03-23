@@ -3,6 +3,9 @@ window.addEventListener("load", function(){
     console.log("Document loaded - ready to go...");
 
     // write your tutorial code here
+
+     // --------
+     
     console.log(this.document.querySelector("#elem1"));
     console.log(this.document.getElementById("elem1"));
 
