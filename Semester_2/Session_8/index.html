@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf8" />
+	<title>CI135 Tutorial 8</title> 
+    <link rel="stylesheet" href="index.css" />
+	<script src="index.js"></script>
+</head>
+<body>
+
+    <h2>Question 2</h2>
+    <p>Attach an initial load event listener to the window object, which hosts all the code to set up further event listeners on document elements once the DOM is fully loaded. If you are unsure how to do this, look at the JavaScript code from the previous tutorial.</p>
+
+    <h2>Question 3</h2>
+    <p>Attach a click event listener to the button with id btn3. The event listener should log the text "Clicked" to the console.</p>
+    <button id="btn3">Log me</button>
+
+    <h2>Question 4</h2>
+    <p>Attach a click event listener to the button with id btn4. The event listener should get the paragraph with id p4, log its current text to the console, and replace it with "Success".</p>
+	<p id="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus ultricies purus id laoreet. Nulla nulla nisi, venenatis vitae massa ut, lacinia sollicitudin est. Cras feugiat enim in ipsum pulvinar luctus. Integer auctor est elit, ut volutpat eros ullamcorper at. Curabitur quam lectus, semper sit amet magna eu, sollicitudin faucibus massa. In hac habitasse platea dictumst. Cras felis lectus, posuere in libero non, egestas hendrerit sem. In vitae lacinia elit.</p>
+    <button id="btn4">Make it a success</button>
+
+    <h2>Question 5</h2>
+    <p>Attach a click event listener to the button with the id btn5. This event listener should get all paragraph &lt;p&gt; elements and log their text to the console</p>
+    <button id="btn5">Log text from all paragraphs</button>
+
+    <h2>Question 6</h2>
+    <p>Investigate mouse events (e.g. mousedown, mouseup, mousemove, click, etc.) by registering a listener for each event on the div with id div6. The listeners should log event properties to the console including the event type and the mouse position. To complete this question, first research MouseEvent and general Event properties at <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent</a> and <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Event">https://developer.mozilla.org/en-US/docs/Web/API/Event</a>.</p>
+    <div id="div6">Listen to mouse events</div>
+
+    <h2>Question 7</h2>
+    <p>Attach a click listener to the anchor element with id a7, which logs the link target (href attribute) to the console. The listener should prevent the default action of the anchor.</p>
+    <a id="a7" href="http://www.brighton.ac.uk">Click this link</a>
+    
+    <h2>Question 8</h2>
+    <p>Attach a click event listener to all table cell <td> elements, which replaces the current cell text with "Success" when clicked</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
