@@ -1,0 +1,83 @@
+body {
+    background-image: linear-gradient(white, #d5d5d5);
+    font-family:'Abel';
+    border-style: double;
+    font-size: 18px;
+    padding: 25px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+time{
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    border: 1px solid black;
+}
+
+caption	{
+	color: black;
+	margin-bottom: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+table  {
+	border-collapse:collapse;
+	border: 1px solid #666;
+}
+th	{
+	background-color: #666;
+	padding: 8px 2px 2px 2px;
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+td	{
+	border: 1px solid #666;
+	padding: 2px;
+}
+td:empty {
+	background-color: #ccc;
+}
+small	{
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.weekly {
+    border-style:outset;
+    box-shadow: 3px 3px 3px grey, -3px -3px 3px grey;
+
+}
+
+.direct {
+    font-size: 23px;
+}
+
+.axol{
+    text-align: center;
+}
+
+.anchor{
+    text-align: right;
+}
+
+.weekly{
+    font-size: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.text{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
